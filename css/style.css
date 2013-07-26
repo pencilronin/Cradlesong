@@ -1,0 +1,78 @@
+nav {
+    float: right;
+    z-index: 2;
+
+}
+ul {
+    list-style: none outside none;
+    margin-top: 70px;
+}
+
+li {
+    font-family: 'bitstream_vera_sans_monobold';
+    font-weight: bold;
+    font-size:1.2em;
+    background-color: #52CCCC;
+    border: 2px solid #90CCCC;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 18px 60px 18px 60px;
+    text-align: center;
+}
+
+a {
+    color: #CC0000;
+    text-decoration: none;
+}
+
+a:hover {
+  color:orange;
+}
+
+/*#square {
+  position:relative;
+  float:right;
+  width:20%;
+  background-color: red;
+  z-index: 3;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+} */
+
+img{
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-1;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img{
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+@font-face {
+    font-family: 'bitstream_vera_sans_monobold';
+    src: url('VeraMono-Bold-webfont.eot');
+    src: url('VeraMono-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('VeraMono-Bold-webfont.woff') format('woff'),
+         url('VeraMono-Bold-webfont.ttf') format('truetype'),
+         url('VeraMono-Bold-webfont.svg#bitstream_vera_sans_monobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
